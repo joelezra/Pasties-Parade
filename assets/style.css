@@ -112,6 +112,12 @@ div p {
   border: solid 1px black;
   border-radius: 20px;
   color: aliceblue;
+  padding: 20px;
+  
+}
+
+.about-title h3 {
+  text-transform: uppercase;
 }
 
 .about-text {
@@ -120,5 +126,6 @@ div p {
   background-color: rgba(78, 141, 167, 0.2);
   /* border: solid 1px black; */
   border-radius: 20px;
+  padding: 20px;
 
 }
