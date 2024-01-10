@@ -52,7 +52,7 @@
   text-align: center;
   color:rgb(255, 248, 239);
   font-family: 'Brush Script MT', cursive;
-  font-size: 500%;
+  font-size: 5rem;
   padding-bottom: 20px;
 }
 
@@ -73,21 +73,22 @@ h2, #pasty-recipe{
   color: white;
 }
 
-#pasty-recipe {
-  display: flex;
+ /* { */
+  /* display: flex;
   flex-direction: column;
-  width: 100%;
-}
-
-/* ul li {
-  list-style-type: circle;
-  font-size: 0.77rem; */
-  
+  width: 100%; */
 /* } */
 
-/* ol li {
-  font-size: 0.9rem;
-} */
+.btn-primary {
+  color: whitesmoke;
+  background-color: black;
+  border-color: black;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+button:hover {
+  background-color: blue;
+}
 
  .logo{
   padding-left: .5em;
