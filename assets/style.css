@@ -47,6 +47,14 @@
 
  }
 
+ /* Recipe Page main content */
+#recipes {
+  text-align: center;
+  color:rgb(255, 248, 239);
+  font-family: 'Brush Script MT', cursive;
+  font-size: 500%;
+}
+
 
  .logo{
   padding-left: .5em;
