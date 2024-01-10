@@ -152,7 +152,8 @@ div p {
 } 
 .welcome-image img{
 padding: 5px;
-width: 40vw;
+width: min(700px, 300px);
+
 margin: 2em;
 }
 .welcome-text p{
