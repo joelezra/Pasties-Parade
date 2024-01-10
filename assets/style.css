@@ -69,7 +69,7 @@ img {
   text-align: center;
 }
 
-h2, #pasty-recipe{
+h2, {
   color: white;
 }
 
@@ -86,6 +86,7 @@ h2, #pasty-recipe{
   font-family: 'Times New Roman', Times, serif;
 }
 
+/* Hover button effect (not working) */
 button:hover {
   background-color: blue;
 }
