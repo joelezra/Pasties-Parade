@@ -1,0 +1,61 @@
+/*------------------------Clear Default CSS*/
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+}
+
+/*-----------------Import "Assistant font*/
+@import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
+
+/*----------------Declare System Font stack variable*/
+/*----------------allows use of system font on all systems*/
+:root {
+    --system-ui: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif
+  }
+  
+  /*---------------Body Styles*/
+
+  body{
+    height: 100vh;
+    
+  }
+
+  /*---------------Element Styles*/
+ main{
+  background: url("/assets/images/background-image.jpg") no-repeat center center/cover;
+  height: 100%;
+ }
+  .navigation{
+    font-family: --system-ui;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 50px;
+    align-items: right;
+    }
+.nav-item{
+
+}
+
+    #social-networks {
+      text-align: center;
+      padding: 20px 0;
+      display: flex;
+      justify-content: space-evenly;
+      list-style-type: none;
+  }
+  #social-networks i {
+      font-size: 160%;
+      padding: 5%;
+      color: #3A3A3A;
+  }
+  
+  
+  
+  
+  
+  
+  
