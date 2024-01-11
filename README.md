@@ -37,6 +37,7 @@
 - HTML Validation testing complete and no errors.
 - CSS Validation testing complete and no errors.
 - Am I Responsive testing carried out. (See images below)
+- Lighthouse Testing, see images below Accesability score due to Aria links not matching text labels
 
 ## Am I Responsive?
 
@@ -53,6 +54,12 @@ We couldn't get an AIR screen with Modal open, so here's a screen capture...
 
 ![wcag-check](/assets/readme/images/wcag-check.png)
 
+## Lighthouse Tests
+![Lighthouse](/assets/readme/images/lighthouse1.png)
+
+![Lighthouse](/assets/readme/images/lighthouse2.png)
+
+![Lighthouse](/assets/readme/images/lighthouse3.png)
 ## For later version
 
 - Signup and Login functionality
