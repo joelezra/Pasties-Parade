@@ -34,20 +34,24 @@
 
 ## Testing 
 
+- HTML Validation tested complete and no errors.
+- CSS Validation not completed at this time.
+- Am I Responsive testing carried out. (See images below)
+
 ## Am I Responsive?
 
 ![index](/assets/readme/images/air-index.png)
 
-![index](/assets/readme/images/air-recipes.png)
-
-![index](/assets/readme/images/air-recipes.png)
+![recipes](/assets/readme/images/air-recipes.png)
 
 ![index](/assets/readme/images/air-thanks.png)
 
 We couldn't get an AIR screen with Modal open, so here's a screen capture...
 ![index](/assets/readme/images/modal-screenshot.png)
 
+## WCAG Contrast Checker
 
+![wcag-check](/assets/readme/images/wcag-check.png)
 
 ## For later version
 
