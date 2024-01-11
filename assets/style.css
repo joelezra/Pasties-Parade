@@ -239,6 +239,8 @@ div p {
 padding: 5px;
 width: 60vw;
 margin: auto;
+display: block;
+
 
 
 
@@ -382,8 +384,9 @@ margin: auto;
  .content-image img{
   padding: 5px;
   width: 80vw;
-  margin: 5 auto;
-  margin: 2em;
+  margin: auto;
+
+  display: block;
 
   }
 
