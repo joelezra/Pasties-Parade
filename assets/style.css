@@ -6,7 +6,7 @@
   font-size: 100%;
 }
 
-/*-----------------Import "Assistant font*/
+/*-----------------Import Assistant font*/
 @import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
 
 /*----------------Declare System Font stack variable*/
@@ -25,7 +25,9 @@
 /*---------------Element Styles*/
 
 h1 {
-  font-family: Assistant, sans-serif;}
+  font-family: Assistant, sans-serif;
+}
+
 p {
   font-family: var(--system-ui);
   padding: 0;
@@ -34,10 +36,10 @@ p {
 
 
 main {
-  background: url("/assets/images/background-image.jpg") no-repeat center center/cover;
+  background: url("images/background-image.jpg") no-repeat center center/cover;
   height: 95vh;
   align-items: center;
-    }
+}
 
 
 .mask {
@@ -50,7 +52,7 @@ main {
 
 
 
- }
+}
 
 header {
 
@@ -65,13 +67,15 @@ header {
 }
 
 
- /* Recipe Page main content */
+/* Recipe Page main content */
 #recipe-title {
   text-align: center;
-  color:rgb(255, 248, 239);
-  font-family: 'Brush Script MT', cursive;
-  font-size: 5rem;
+
+  color:#f5f5f5;
+  font-family: Assistant, sans-serif;
+  font-size: 4vw;
   padding-bottom: 20px;
+  margin-top: 20px;
 }
 
 .recipe {
@@ -80,20 +84,21 @@ header {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 20px;
-  
+
 }
 
 .polaroid {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .recipe-image {
   height: 300px;
   width: 300px;
+  margin-bottom: 2px;
 }
 
 .polaroid {
-  background-color: #f5f5f5;
+  background-color: #f0f0f0;
   height: 383px;
   width: 330px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -104,7 +109,8 @@ h2 {
   color: white;
 }
 
-.modal-body p, .modal-body li {
+.modal-body p,
+.modal-body li {
   margin-left: 9px;
 }
 
@@ -120,14 +126,15 @@ h2 {
 }
 
 
-  .navigation{
-    font-family: var(--system-ui);
+.navigation {
+  font-family: var(--system-ui);
 }
 
 
 .logo {
   font-size: large;
   padding-left: .4em;
+  margin-top: 5px;
 }
 
 nav {
@@ -140,16 +147,19 @@ nav {
   display: none;
   top: 100%;
 }
+
 #menu {
   font-size: 100%;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   list-style-type: none;
 }
 
 #menu>li {
   margin-bottom: .1em;
   margin: .1em;
+  letter-spacing: 2px;
 }
+
 .nav-link {
   display: block;
   padding: 0.1em 0.1em;
@@ -159,10 +169,11 @@ nav {
   border-top: 1px solid #3a3a3a;
   border-right: 1px solid #3a3a3a;
   border-left: 1px solid #3a3a3a;
-  border-top-left-radius: 25%;
-  border-top-right-radius: 25%;
+  border-top-left-radius: 10%;
+  border-top-right-radius: 10%;
   background-color: rgb(216, 221, 224);
 }
+
 /*Nav Toggle*/
 
 #nav-toggle:checked~nav {
@@ -207,10 +218,11 @@ div p {
   padding: 1%;
   color: #3A3A3A;
 }
+
 /*---------------Content Styles*/
-.content-container{
+.content-container {
   width: 90%;
-  height:90vh;
+  height: 100vh;
   background-color: rgba(2, 2, 2, 0.2);
   display: flex;
   flex-direction: column;
@@ -218,51 +230,55 @@ div p {
   margin-inline: auto;
 }
 
-.content-container h2{
+.content-container h2 {
   font-family: var(--system-ui);
   margin: 1em;
-  font-size: 2vw;
+
+  font-size: 3vw;
 } 
 .content-image img{
 padding: 5px;
-width: 60vw;
+width: 40vw;
 margin: auto;
-
 display: block;
- 
+
+
+
 
 }
-.content-text p{
- font-size: 1.5vw;
- padding: 1em 1em;
- margin: 5 auto;
+
+.content-text p {
+  font-size: 1.5vw;
+  padding: 1em 1em;
+  margin: 5 auto;
 }
 
 
 /*    about styling */
 
-.about-center {
-  max-width: 1536px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0.5rem;
-  padding-right: 0.5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 
-.about-title {
-  color: white;
+.about-title h3 {
+  background-color: rgba(49, 46, 40, 40%);
   text-align: center;
+  justify-content: center;
+  font-size: 5rem;
+  color:#f5f5f5;
+  font-family: Assistant, sans-serif;
+  font-size: 2.5vw;
+  padding-bottom: 20px;
+  margin-top: 20px;
 }
+  
 
 .card {
   font-family: "Assistant", sans-serif;
+  letter-spacing: 1.75px;
   overflow: hidden;
   padding: 30PX;
   background: rgb(211, 211, 211);
   background: linear-gradient(0deg, rgba(211, 211, 211, 0.5) 0%, rgba(209, 224, 245, 0.5) 100%);
+  margin: 0%;
+  min-height: 55vh;
 }
 
 .card-title {
@@ -274,25 +290,26 @@ display: block;
   margin: 0;
 }
 
-.card-img-top {}
+
 
 .card-text {
   font-family: "Assistant", sans-serif;
 }
 
-=======
 .thankyou {
-  display:flex;
+  display: flex;
   flex-direction: column;
-  
+
   padding-top: 45vh;
   height: 90vh;
   width: 90%;
 }
+
 .btn {
   width: 200px;
   margin: auto;
 }
+
 .form {
   padding: 10;
   margin: 5 auto;
@@ -301,14 +318,36 @@ display: block;
   margin: auto;
   margin-top: 5px;
 }
+input {
+  width: 100%;
+}
 
-.form input[type=submit]{
+.form input[type=submit] {
   padding: 0px 4px;
-  margin: 2px;
+  
+  margin-top: 15px;
 }
 
 
 /*---------------Media Queries*/
+@media only screen and (max-width: 782px) and (min-width: 768px) {   
+.logo {
+  font-size: 6vw;
+  line-height: 79px;
+  margin: 0 0.1rem;
+  letter-spacing: .1em;
+}
+.nav {
+  display: block;
+  position: absolute;
+  box-shadow: none;
+  width: fit-content;
+  padding-right: .1rem;
+  letter-spacing: .1em;
+
+
+}
+}
 
 /* Extra small devices (phones, 600px and down) */
 /*set flexx for  conmtent to column on mobile screens*/
@@ -318,42 +357,44 @@ display: block;
   .logo h1 {
     padding-left: .1em;
 
-    font-size: 8vw;
-
-
   font-size: 8vw;
+}
 
-
-  }
   .content-container{
   display: flex;
   flex-direction: column;
   align-items: center;
   overflow: auto;
 }
+
 .content-container h2{
   font-family: var(--system-ui);
   margin: 1em;
   font-size: 4vw;
-} 
+}
+
 .content-text p{
   padding: 1em 1em;
   margin: 5 auto;
   font-size: 3vw;
  }
+
  .content-image img{
   padding: 5px;
   width: 80vw;
-  margin: 5 auto;
-  margin: 2em;
+  margin: auto;
+
+  display: block;
+
   }
 
-/* about */
+  /* about */
   .card {
     font-size: 1em;
     padding: 10px;
     margin: 10px 20px;
   }
+
 
   .about-center {
     overflow: hidden;
@@ -381,35 +422,34 @@ display: block;
     
   }
 
-}
 
-/* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {  
-  nav {
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    nav {
       display: block;
       position: relative;
       box-shadow: none;
       width: fit-content;
       padding-right: .4rem;
-  }
+    }
 
-  #menu {
+    #menu {
       display: flex;
-  }
+    }
 
-  #menu>li {
-      padding-left: .5rem;
+   
 
-  }
-
-  .nav-toggle-label {
+    .nav-toggle-label {
       display: none;
-  }
+    }
 
-  #logo {
+    #logo {
       font-size: 220%;
       line-height: 79px;
       margin: 0 0.1rem;
+
   }
 
   .content-container{
@@ -467,3 +507,27 @@ display: block;
 
 
 
+
+  }}
+ /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .content-image img{
+    padding: 5px;
+    width: 40vw;
+}
+#menu>li {
+  padding-left: 2rem;
+
+
+}.nav-link {
+  display: block;
+  padding: 0.6em 0.6em;
+  font-size: 1.5rem;
+}
+#logo {
+  font-size: 240%;
+  line-height: 84px;
+  margin: 1rem;
+  margin-top: 8px;
+}
+}
