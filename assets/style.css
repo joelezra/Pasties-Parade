@@ -33,7 +33,6 @@ main {
   background: url("/assets/images/background-image.jpg") no-repeat center center/cover;
   height: 94.5vh;
   align-items: center;
-  
     }
 
 
@@ -41,6 +40,7 @@ main {
   height: 100%;
   width: 100%;
   background-color: rgba(49, 46, 40, 40%);
+  overflow: auto;
 
 }
 header{
@@ -243,6 +243,9 @@ margin: 2em;
     padding: 10px;
     margin: 10px 20px;
   }
+
+  .about-center {
+    overflow: hidden;
 
 }
 
