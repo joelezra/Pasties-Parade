@@ -35,7 +35,7 @@ p {
 
 main {
   background: url("/assets/images/background-image.jpg") no-repeat center center/cover;
-  height: 94.5vh;
+  height: 95vh;
   align-items: center;
   
     }
@@ -45,6 +45,7 @@ main {
   height: 100%;
   width: 100%;
   background-color: rgba(49, 46, 40, 40%);
+  overflow: auto;
 
 
  }
@@ -76,6 +77,7 @@ header {
   flex-wrap: wrap;
   justify-content: space-evenly;
   padding: 20px;
+  
 }
 
 .polaroid {
@@ -287,6 +289,13 @@ display: block;
   width: 80vw;
   margin: 5 auto;
   margin: 2em;
+  }
+  .recipe {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 20px;
   }
 }
 
