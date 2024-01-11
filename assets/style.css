@@ -222,7 +222,7 @@ div p {
 /*---------------Content Styles*/
 .content-container {
   width: 90%;
-  height: 100vh;
+  height: 90vh;
   background-color: rgba(2, 2, 2, 0.2);
   display: flex;
   flex-direction: column;
@@ -312,20 +312,24 @@ display: block;
 
 .form {
   padding: 10;
-  margin: 5 auto;
+  margin: 5;
   font-size: 1.5vw;
   padding: 1em 1em;
   margin: auto;
   margin-top: 5px;
+  width: 100%;
 }
 input {
+  width: 100%;
+}
+textarea {
   width: 100%;
 }
 
 .form input[type=submit] {
   padding: 0px 4px;
-  
   margin-top: 15px;
+  max-width: 20%;
 }
 
 
@@ -456,7 +460,7 @@ input {
     display: flex;
     flex-direction: column;
     align-items: center;
-    overflow: auto;
+   
   }
 
   .recipe {
@@ -492,7 +496,7 @@ input {
   display: flex;
   flex-direction: column;
   align-items: center;
-  overflow: auto;
+
 }
 
 .recipe {
@@ -508,7 +512,7 @@ input {
 
 
 
-  }}
+  
  /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .content-image img{
@@ -529,5 +533,11 @@ input {
   line-height: 84px;
   margin: 1rem;
   margin-top: 8px;
+}
+input {
+  width: 60%;
+}
+textarea {
+  width: 60%
 }
 }
