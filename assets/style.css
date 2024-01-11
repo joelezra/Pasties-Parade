@@ -4,7 +4,6 @@
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
 }
 
 /*-----------------Import "Assistant font*/
@@ -22,13 +21,6 @@
   background-color: #d1e0f5;
 }
 
-/*.bg-sand{
-      background-color: #d1b58d;
-        }*/
-
-.bg-sand {
-  background-color: color-mix(in srgb, #d1b58d 65%, black)
-}
 
 /*---------------Element Styles*/
 p {
@@ -39,8 +31,11 @@ p {
 
 main {
   background: url("/assets/images/background-image.jpg") no-repeat center center/cover;
-  height: 90vh;
-}
+  height: 94.5vh;
+  align-items: center;
+  
+    }
+
 
 .mask {
   height: 100%;
@@ -48,23 +43,69 @@ main {
   background-color: rgba(49, 46, 40, 40%);
 
 }
+header{
 
+    padding: 0 .2rem;
+    position: fixed;
+    z-index: 99;
+    width: 100%;
+    box-shadow: 0 2px 2px #3a3a3a;
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
 
 .logo {
-  padding-left: .5em;
+  font-size: large;
+  padding-left: .4em;
 }
 
-.navigation {
-  font-family: var(--system-ui);
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  height: 50px;
-  align-items: right;
+nav {
+  position: absolute;
+  background-color: #d1e0f5;
+  padding: .5rem .5rem;
+  width: 100%;
+  left: 0;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: none;
+  top: 100%;
+}
+#menu {
+  font-size: 100%;
+  letter-spacing: 4px;
+  list-style-type: none;
 }
 
-.nav-item {
-  padding-top: .4em;
+#menu>li {
+  margin-bottom: .1em;
+  margin: .1em;
+}
+.nav-link {
+  display: block;
+  padding: 0.1em 0.1em;
+}
+
+.active {
+  border-top: 1px solid #3a3a3a;
+  border-right: 1px solid #3a3a3a;
+  border-left: 1px solid #3a3a3a;
+  border-top-left-radius: 25%;
+  border-top-right-radius: 25%;
+  background-color: rgb(216, 221, 224);
+}
+/*Nav Toggle*/
+
+#nav-toggle:checked~nav {
+  display: block;
+}
+
+#nav-toggle {
+  display: none;
+}
+
+.nav-toggle-label {
+  font-size: 2rem;
+  margin-right: .5em;
 }
 
 .footer {
@@ -93,10 +134,11 @@ div p {
   padding: 1%;
   color: #3A3A3A;
 }
-
-/*    about styling */
-
-.about-center {
+/*---------------Content Styles*/
+.content-container{
+  width: 90%;
+  height:90vh;
+  background-color: rgba(2, 2, 2, 0.2);
   display: flex;
   flex-direction: row;
   padding-top: 56px;
@@ -119,6 +161,44 @@ margin: 2em;
  font-size: 1.5vw;
  padding: 1em 1em;
  margin: 5 auto;
+}
+
+/*    about styling */
+
+.about-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.about-title {
+  color: white;
+}
+
+.card {
+  overflow: hidden;
+  padding: 30PX;
+  background: rgb(211, 211, 211);
+  background: linear-gradient(0deg, rgba(211, 211, 211, 0.9009978991596639) 0%, rgba(209, 224, 245, 0.9009978991596639) 100%);
+
+
+}
+
+.card-title {
+  text-decoration: underline;
+}
+
+.card-body {}
+
+.card-img-top {}
+
+.card-text {
+  font-family: "assistant", sans-serif;
 }
 
 
