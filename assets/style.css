@@ -6,7 +6,7 @@
   font-size: 100%;
 }
 
-/*-----------------Import "Assistant font*/
+/*-----------------Import Assistant font*/
 @import url('https://fonts.googleapis.com/css2?family=Assistant&display=swap');
 
 /*----------------Declare System Font stack variable*/
@@ -67,7 +67,7 @@ header {
  /* Recipe Page main content */
 #recipe-title {
   text-align: center;
-  color:rgb(255, 248, 239);
+  color:#f5f5f5;
   font-family: 'Brush Script MT', cursive;
   font-size: 5rem;
   padding-bottom: 20px;
@@ -83,16 +83,17 @@ header {
 }
 
 .polaroid {
-  margin-bottom: 25px;
+  margin-bottom: 30px;
 }
 
 .recipe-image {
   height: 300px;
   width: 300px;
+  margin-bottom: 2px;
 }
 
 .polaroid {
-  background-color: #f5f5f5;
+  background-color: #f0f0f0;
   height: 383px;
   width: 330px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -127,6 +128,7 @@ h2 {
 .logo {
   font-size: large;
   padding-left: .4em;
+  margin-top: 5px;
 }
 
 nav {
@@ -141,13 +143,14 @@ nav {
 }
 #menu {
   font-size: 100%;
-  letter-spacing: 4px;
+  letter-spacing: 2px;
   list-style-type: none;
 }
 
 #menu>li {
   margin-bottom: .1em;
   margin: .1em;
+  letter-spacing: 2px;
 }
 .nav-link {
   display: block;
@@ -220,7 +223,7 @@ div p {
 .content-container h2{
   font-family: var(--system-ui);
   margin: 1em;
-  font-size: 2vw;
+  font-size: 3vw;
 } 
 .content-image img{
 padding: 5px;
@@ -273,13 +276,13 @@ display: block;
   margin: 0;
 }
 
-.card-img-top {}
+
 
 .card-text {
   font-family: "Assistant", sans-serif;
 }
 
-=======
+
 .thankyou {
   display:flex;
   flex-direction: column;
@@ -308,6 +311,24 @@ display: block;
 
 
 /*---------------Media Queries*/
+@media only screen and (max-width: 782px) and (min-width: 768px) {   
+.logo {
+  font-size: 6vw;
+  line-height: 79px;
+  margin: 0 0.1rem;
+  letter-spacing: .1em;
+}
+.nav {
+  display: block;
+  position: absolute;
+  box-shadow: none;
+  width: fit-content;
+  padding-right: .1rem;
+  letter-spacing: .1em;
+
+
+}
+}
 
 /* Extra small devices (phones, 600px and down) */
 /*set flexx for  conmtent to column on mobile screens*/
@@ -315,27 +336,25 @@ display: block;
 
   .logo h1 {
     padding-left: .1em;
-
-    font-size: 8vw;
-
-
   font-size: 8vw;
+}
 
->
-  }
   .content-container{
   flex-direction: column;
 }
+
 .content-container h2{
   font-family: var(--system-ui);
   margin: 1em;
   font-size: 4vw;
-} 
+}
+
 .content-text p{
   padding: 1em 1em;
   margin: 5 auto;
   font-size: 3vw;
  }
+
  .content-image img{
   padding: 5px;
   width: 80vw;
@@ -351,7 +370,7 @@ display: block;
   }
 
   .about-center {
-    overflow: hidden;
+    overflow: hidden;}
 
 
   .recipe {
@@ -392,19 +411,10 @@ display: block;
       line-height: 79px;
       margin: 0 0.1rem;
   }}
-  @media only screen and (max-width: 776px) and (min-width: 768px) {    #logo {
-    font-size: 220%;
-    line-height: 79px;
-    margin: 0 0.1rem;
-  }
-  nav {
-    display: block;
-    position: relative;
-    box-shadow: none;
-    width: fit-content;
-    padding-right: .1rem;
+ /* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .content-image img{
+    padding: 5px;
+    width: 40vw;
+
 }
-  }
-
-
-
