@@ -77,11 +77,6 @@ header {
   margin-bottom: 25px;
 }
 
-/* .item {
-  display: flex;
-  flex-direction: column;
-} */
-
 img {
   height: 300px;
   width: 300px;
@@ -114,10 +109,6 @@ h2 {
   font-family: 'Times New Roman', Times, serif;
 }
 
-/* Hover button effect (not working) */
-button:hover {
-  background-color: blue;
-}
 
  .logo{
   padding-left: .5em;
