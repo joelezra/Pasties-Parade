@@ -23,6 +23,8 @@
 
 
 /*---------------Element Styles*/
+h1 {
+  font-family: Assistant, sans-serif;}
 p {
   font-family: var(--system-ui);
   padding: 0;
@@ -58,6 +60,7 @@ header{
 .logo {
   font-size: large;
   padding-left: .4em;
+  padding-top: .4em;
 }
 
 nav {
@@ -163,7 +166,19 @@ margin: 2em;
  margin: 5 auto;
 }
 
+.form {
+  padding: 10;
+  margin: 5 auto;
+  font-size: 1.5vw;
+  padding: 1em 1em;
+  margin: auto;
+  margin-top: 5px;
+}
 
+.form input[type=submit]{
+  padding: 0px 4px;
+  margin: 2px;
+}
 /*---------------Media Queries*/
 
 /* Extra small devices (phones, 600px and down) */
@@ -172,6 +187,7 @@ margin: 2em;
 
   .logo h1 {
     padding-left: .1em;
+  font-size: 8vw;
   }
   .content-container{
   flex-direction: column;
