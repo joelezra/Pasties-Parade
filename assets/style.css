@@ -37,7 +37,6 @@ main {
   background: url("/assets/images/background-image.jpg") no-repeat center center/cover;
   height: 95vh;
   align-items: center;
-  
     }
 
 
@@ -46,6 +45,8 @@ main {
   width: 100%;
   background-color: rgba(49, 46, 40, 40%);
   overflow: auto;
+
+
 
 
  }
@@ -61,6 +62,7 @@ header {
   justify-content: space-between;
   align-items: baseline;
 }
+
 
  /* Recipe Page main content */
 #recipe-title {
@@ -179,6 +181,9 @@ nav {
   padding: 0;
   margin: 0;
   height: 10px;
+  width: 100%;
+  bottom: 0;
+  position: relative;
 }
 
 div p {
@@ -232,6 +237,49 @@ display: block;
  margin: 5 auto;
 }
 
+
+/*    about styling */
+
+.about-center {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-title {
+  color: white;
+  text-align: center;
+}
+
+.card {
+  font-family: "Assistant", sans-serif;
+  overflow: hidden;
+  padding: 30PX;
+  background: rgb(211, 211, 211);
+  background: linear-gradient(0deg, rgba(211, 211, 211, 0.5) 0%, rgba(209, 224, 245, 0.5) 100%);
+}
+
+.card-title {
+  text-decoration: underline;
+}
+
+.card-body {
+  padding: 0;
+  margin: 0;
+}
+
+.card-img-top {}
+
+.card-text {
+  font-family: "Assistant", sans-serif;
+}
+
+=======
 .thankyou {
   display:flex;
   flex-direction: column;
@@ -258,6 +306,7 @@ display: block;
   margin: 2px;
 }
 
+
 /*---------------Media Queries*/
 
 /* Extra small devices (phones, 600px and down) */
@@ -267,9 +316,12 @@ display: block;
   .logo h1 {
     padding-left: .1em;
 
+    font-size: 8vw;
+
 
   font-size: 8vw;
 
+>
   }
   .content-container{
   flex-direction: column;
@@ -290,6 +342,18 @@ display: block;
   margin: 5 auto;
   margin: 2em;
   }
+
+/* about */
+  .card {
+    font-size: 1em;
+    padding: 10px;
+    margin: 10px 20px;
+  }
+
+  .about-center {
+    overflow: hidden;
+
+
   .recipe {
     display: flex;
     flex-direction: column;
@@ -297,6 +361,7 @@ display: block;
     justify-content: space-evenly;
     padding: 20px;
   }
+
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
