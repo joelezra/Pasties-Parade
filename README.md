@@ -34,8 +34,8 @@
 
 ## Testing 
 
-- HTML Validation tested complete and no errors.
-- CSS Validation not completed at this time.
+- HTML Validation testing complete and no errors.
+- CSS Validation testing complete and no errors.
 - Am I Responsive testing carried out. (See images below)
 
 ## Am I Responsive?
