@@ -148,19 +148,21 @@ div p {
 .content-container h2{
   font-family: var(--system-ui);
   margin: 1em;
-
+  font-size: 2vw;
 } 
-.welcome-image img{
+.content-image img{
 padding: 5px;
-width: min(700px, 300px);
+width: 40vw;
+margin: 5 auto;
 
 margin: 2em;
 }
-.welcome-text p{
+.content-text p{
  font-size: 1.5vw;
  padding: 1em 1em;
  margin: 5 auto;
 }
+
 
 /*---------------Media Queries*/
 
@@ -174,10 +176,22 @@ margin: 2em;
   .content-container{
   flex-direction: column;
 }
-.welcome-text p{
+.content-container h2{
+  font-family: var(--system-ui);
+  margin: 1em;
+  font-size: 4vw;
+} 
+.content-text p{
   padding: 1em 1em;
   margin: 5 auto;
+  font-size: 3vw;
  }
+ .content-image img{
+  padding: 5px;
+  width: 80vw;
+  margin: 5 auto;
+  margin: 2em;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
@@ -222,7 +236,7 @@ margin: 2em;
   }
 
 /* Large devices (laptops/desktops, 992px and up) */
-@media only screen and (min-width: 992px) {
+@media only screen and (min-width: 992px) {...}
 
 
 /* Extra large devices (large laptops and desktops, 1200px and up) */
