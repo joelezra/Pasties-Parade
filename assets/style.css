@@ -98,35 +98,104 @@ div p {
 
 .about-center {
   display: flex;
+  flex-direction: row;
+  padding-top: 56px;
+  margin-inline: auto;
+}
+
+.content-container h2{
+  font-family: var(--system-ui);
+  margin: 1em;
+  font-size: 2vw;
+} 
+.content-image img{
+padding: 5px;
+width: 40vw;
+margin: 5 auto;
+
+margin: 2em;
+}
+.content-text p{
+ font-size: 1.5vw;
+ padding: 1em 1em;
+ margin: 5 auto;
+}
+
+
+/*---------------Media Queries*/
+
+/* Extra small devices (phones, 600px and down) */
+/*set flexx for  conmtent to column on mobile screens*/
+@media only screen and (max-width: 600px) {
+
+  .logo h1 {
+    padding-left: .1em;
+  }
+  .content-container{
   flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+}
+.content-container h2{
+  font-family: var(--system-ui);
+  margin: 1em;
+  font-size: 4vw;
+} 
+.content-text p{
+  padding: 1em 1em;
+  margin: 5 auto;
+  font-size: 3vw;
+ }
+ .content-image img{
+  padding: 5px;
+  width: 80vw;
+  margin: 5 auto;
+  margin: 2em;
+  }
 }
 
-.about-title {
-  color: white;
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {  
+  nav {
+      display: block;
+      position: relative;
+      box-shadow: none;
+      width: fit-content;
+      padding-right: .4rem;
+  }
+
+  #menu {
+      display: flex;
+  }
+
+  #menu>li {
+      padding-left: .5rem;
+  }
+
+  .nav-toggle-label {
+      display: none;
+  }
+
+  #logo {
+      font-size: 220%;
+      line-height: 79px;
+      margin: 0 0.1rem;
+  }}
+  @media only screen and (max-width: 776px) and (min-width: 768px) {    #logo {
+    font-size: 220%;
+    line-height: 79px;
+    margin: 0 0.1rem;
+  }
+  nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: .1rem;
 }
+  }
 
-.card {
-  overflow: hidden;
-  padding: 30PX;
-  background: rgb(211, 211, 211);
-  background: linear-gradient(0deg, rgba(211, 211, 211, 0.9009978991596639) 0%, rgba(209, 224, 245, 0.9009978991596639) 100%);
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {...}
 
-}
 
-.card-title {
-  text-decoration: underline;
-}
-
-.card-body {}
-
-.card-img-top {}
-
-.card-text {
-  font-family: "assistant", sans-serif;
-}
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {...}
