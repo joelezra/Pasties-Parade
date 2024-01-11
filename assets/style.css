@@ -169,12 +169,14 @@ margin: 2em;
 /*    about styling */
 
 .about-center {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  min-height: 90vh;
-  max-width: 80%;
-  margin: auto;
 }
 
 .about-title {
