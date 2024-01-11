@@ -41,6 +41,7 @@ main {
 
 
 .mask {
+  position: fixed;
   height: 100%;
   width: 100%;
   background-color: rgba(49, 46, 40, 40%);
@@ -313,6 +314,7 @@ display: block;
 /*set flexx for  conmtent to column on mobile screens*/
 @media only screen and (max-width: 600px) {
 
+
   .logo h1 {
     padding-left: .1em;
 
@@ -321,10 +323,13 @@ display: block;
 
   font-size: 8vw;
 
->
+
   }
   .content-container{
+  display: flex;
   flex-direction: column;
+  align-items: center;
+  overflow: auto;
 }
 .content-container h2{
   font-family: var(--system-ui);
@@ -352,14 +357,28 @@ display: block;
 
   .about-center {
     overflow: hidden;
-
+  }
 
   .recipe {
+    align-items: space-evenly;
+    padding: 30px;
+  }
+
+  .polaroid {
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    padding: 20px;
+    width: 220px;
+    height: 280px;
+  }
+
+  .recipe-image {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    height: 200px;
+    width: 200px;
+    text-align: center;
+    
   }
 
 }
@@ -391,18 +410,58 @@ display: block;
       font-size: 220%;
       line-height: 79px;
       margin: 0 0.1rem;
-  }}
+  }
+
+  .content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: auto;
+  }
+
+  .recipe {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+  }
+
+  .polaroid {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
+
+}
+  
   @media only screen and (max-width: 776px) and (min-width: 768px) {    #logo {
     font-size: 220%;
     line-height: 79px;
     margin: 0 0.1rem;
   }
+
   nav {
     display: block;
     position: relative;
     box-shadow: none;
     width: fit-content;
     padding-right: .1rem;
+}
+
+.content-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: auto;
+}
+
+.recipe {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 0;
 }
   }
 
