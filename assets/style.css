@@ -328,10 +328,14 @@ display: block;
   margin: auto;
   margin-top: 5px;
 }
+input {
+  width: 100%;
+}
 
 .form input[type=submit] {
   padding: 0px 4px;
-  margin: 2px;
+  
+  margin-top: 15px;
 }
 
 
