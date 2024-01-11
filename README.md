@@ -32,8 +32,11 @@
 
 ![index](/assets/readme/images/about-hires.png)
 
-# Notes
-Drop any notes or sources here and well add them in later
+# Testing 
+
+# Am I Responsive?
+
+
 
 # For later version
 
