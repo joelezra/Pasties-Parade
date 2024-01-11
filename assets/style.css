@@ -44,14 +44,43 @@ main {
 
  }
 
+header {
+
+  padding: 0 .2rem;
+  position: fixed;
+  z-index: 99;
+  width: 100%;
+  box-shadow: 0 2px 2px #3a3a3a;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
  /* Recipe Page main content */
-#recipes {
+#recipe-title {
   text-align: center;
   color:rgb(255, 248, 239);
   font-family: 'Brush Script MT', cursive;
   font-size: 5rem;
   padding-bottom: 20px;
 }
+
+.recipe {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding: 20px;
+}
+
+.polaroid {
+  margin-bottom: 25px;
+}
+
+/* .item {
+  display: flex;
+  flex-direction: column;
+} */
 
 img {
   height: 300px;
@@ -60,7 +89,7 @@ img {
 
 .polaroid {
   background-color: #f5f5f5;
-  height: 360px;
+  height: 383px;
   width: 330px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   text-align: center;
@@ -70,11 +99,13 @@ h2 {
   color: white;
 }
 
- /* { */
-  /* display: flex;
-  flex-direction: column;
-  width: 100%; */
-/* } */
+.modal-body p, .modal-body li {
+  margin-left: 9px;
+}
+
+.modal-body p {
+  font-weight: 600;
+}
 
 .btn-primary {
   color: whitesmoke;
@@ -94,17 +125,7 @@ button:hover {
   .navigation{
     font-family: var(--system-ui);
 }
-header{
 
-    padding: 0 .2rem;
-    position: fixed;
-    z-index: 99;
-    width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-}
 
 .logo {
   font-size: large;
