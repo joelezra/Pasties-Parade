@@ -219,9 +219,10 @@ div p {
 padding: 5px;
 width: 60vw;
 margin: auto;
-padding-inline: auto;
 
-margin: 2em;
+display: block;
+ 
+
 }
 .content-text p{
  font-size: 1.5vw;
