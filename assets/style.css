@@ -423,10 +423,7 @@ display: block;
       display: flex;
     }
 
-    #menu>li {
-      padding-left: .5rem;
-
-    }
+   
 
     .nav-toggle-label {
       display: none;
@@ -443,5 +440,19 @@ display: block;
   .content-image img{
     padding: 5px;
     width: 40vw;
+}
+#menu>li {
+  padding-left: 2rem;
+
+}.nav-link {
+  display: block;
+  padding: 0.6em 0.6em;
+  font-size: 1.5rem;
+}
+#logo {
+  font-size: 240%;
+  line-height: 84px;
+  margin: 1rem;
+  margin-top: 8px;
 }
 }
