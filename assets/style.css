@@ -70,7 +70,7 @@ header {
   font-family: Assistant, sans-serif;
   font-size: 3vw;
   padding-bottom: 20px;
-  margin-top: 20px;
+  margin-top: 75px;
 }
 
 .recipe {
@@ -304,12 +304,10 @@ div p {
 }
 
 .form {
-  padding: 10;
-  margin: 5;
+  padding-left: 15px;
+margin-left: 10px;
   font-size: 1.5vw;
-  padding: 1em 1em;
  
-  margin-top: 5px;
   width: 100%;
 }
 
@@ -372,7 +370,7 @@ textarea {
   }
 
   /* about */
-  .about-title h3 {
+  .about-title h2 {
     background-color: rgba(49, 46, 40, 40%);
     text-align: center;
     justify-content: center;
