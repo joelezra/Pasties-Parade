@@ -201,7 +201,7 @@ div p {
 #social-networks {
   text-align: center;
   margin: 0;
-  padding: 16px 0 0 0;
+  padding: 4px 0 0 0;
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
@@ -209,7 +209,7 @@ div p {
 
 #social-networks i {
   font-size: 160%;
-  padding: 1%;
+  padding: 1px;
   color: #3A3A3A;
 }
 
