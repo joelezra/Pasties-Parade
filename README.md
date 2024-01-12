@@ -60,6 +60,12 @@ We couldn't get an AIR screen with Modal open, so here's a screen capture...
 ![Lighthouse](/assets/readme/images/lighthouse2.png)
 
 ![Lighthouse](/assets/readme/images/lighthouse3.png)
+
+## Bugs and unintended features
+
+Some CSS related bugs were found and fixed, any bugs from this point are clearly features.
+
+
 ## For later version
 
 - Signup and Login functionality
