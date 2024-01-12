@@ -68,7 +68,7 @@ header {
   text-align: center;
   color: #f5f5f5;
   font-family: Assistant, sans-serif;
-  font-size: 4vw;
+  font-size: 3vw;
   padding-bottom: 20px;
   margin-top: 20px;
 }
@@ -229,7 +229,7 @@ div p {
 }
 
 .content-container h2 {
-  font-family: var(--system-ui);
+  font-family: Assistant, sans-serif;
   margin: 1em;
   font-size: 3vw;
 }
@@ -308,7 +308,7 @@ div p {
   margin: 5;
   font-size: 1.5vw;
   padding: 1em 1em;
-  margin: auto;
+ 
   margin-top: 5px;
   width: 100%;
 }
