@@ -128,7 +128,7 @@ h2 {
 .logo {
   font-size: large;
   padding-left: .4em;
-  margin-top: 5px;
+  margin-top: 8px;
 }
 
 nav {
@@ -244,6 +244,10 @@ div p {
 }
 
 /*    about styling */
+.about-title {
+  padding-top: 0;
+  margin-top: 0;
+}
 
 .about-title h3 {
   background-color: rgba(49, 46, 40, 40%);
@@ -254,7 +258,7 @@ div p {
   font-family: Assistant, sans-serif;
   font-size: 2.5vw;
   padding-bottom: 20px;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .card {
@@ -319,33 +323,21 @@ textarea {
   max-width: 20%;
 }
 
-
-/*---------------Media Queries*/
-@media only screen and (max-width: 782px) and (min-width: 768px) {
-  .logo {
-    font-size: 6vw;
-    line-height: 79px;
-    margin: 0 0.1rem;
-    letter-spacing: .1em;
-  }
-
-  .nav {
-    display: block;
-    position: absolute;
-    box-shadow: none;
-    width: fit-content;
-    padding-right: .1rem;
-    letter-spacing: .1em;
-}
-}
-
 /* Extra small devices (phones, 600px and down) */
-/*set flexx for  conmtent to column on mobile screens*/
+/*set flex for  conmtent to column on mobile screens*/
+
 @media only screen and (max-width: 600px) {
 
   .logo h1 {
-    padding-left: .1em;
-    font-size: 8vw;
+    padding-left: 0;
+    font-size: 160%;
+    letter-spacing: .1px;
+    margin-left: 1px;
+  }
+  .nav-toggle-label {
+    font-size: 1.5rem;
+    margin-right: .5em;
+    padding-left: 0;
   }
 
   .content-container {
@@ -364,7 +356,7 @@ textarea {
   .content-text p {
     padding: 1em 1em;
     margin: 5 auto;
-    font-size: 3vw;
+    font-size: 4vw;
   }
 
   .content-image img {
@@ -376,6 +368,17 @@ textarea {
   }
 
   /* about */
+  .about-title h3 {
+    background-color: rgba(49, 46, 40, 40%);
+    text-align: center;
+    justify-content: center;
+    
+    color: #f5f5f5;
+    font-family: Assistant, sans-serif;
+    font-size: 3vw;
+    padding-bottom: 15px;
+    padding-top: 15px;
+  }
   .card {
     font-size: 1em;
     padding: 10px;
@@ -406,6 +409,15 @@ textarea {
     width: 200px;
     text-align: center;
 
+  }
+  .form {
+    padding: 10;
+    margin: 5;
+    font-size: 4vw;
+    padding: 1em 1em;
+    margin: auto;
+    margin-top: 5px;
+    width: 100%;
   }
 }
 
@@ -459,6 +471,7 @@ textarea {
     font-size: 220%;
     line-height: 79px;
     margin: 0 0.1rem;
+    letter-spacing: .1em;
   }
 
   nav {
@@ -498,8 +511,8 @@ textarea {
 
   .nav-link {
     display: block;
-    padding: 0.6em 0.6em;
-    font-size: 1.5rem;
+    padding: 0.1em 0.6em;
+    font-size: 1rem;
   }
 
   #logo {
