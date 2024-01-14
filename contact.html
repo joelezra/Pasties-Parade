@@ -1,98 +1,174 @@
 <!--Boilerplate HTML-->
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta http-equiv="X-UA-Compatible" content="ie=edge">
-<link rel="icon" type="image/png" href="assets/images/favicons/favicon-32x32.png" sizes="32x32">
-<link rel="icon" type="image/png" href="assets/images/favicons/favicon-16x16.png" sizes="16x16">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/favicons/favicon-32x32.png"
+      sizes="32x32"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      href="assets/images/favicons/favicon-16x16.png"
+      sizes="16x16"
+    />
 
-<meta name="Description" content="Join the Pasties Parade journey! Our Cornish pasty recipes promise a delightful blend of ingredients encased in a crisp, homemade pastry.">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-<link rel="stylesheet" href="assets/style.css">
-<title>Pasties Parade</title>
-</head>
-<body>
-<!--Header-->
-<header class="navigation bg-blue">
-  <!-- Logo-->
-  <a class="logo text-dark text-uppercase text-decoration-none" aria-label="Our Logo" href="index.html">
-    <h1>Pasties Parade</h1>
-  </a>
-  <input type="checkbox" id="nav-toggle" name="nav-toggle">
-  <label for="nav-toggle" class="nav-toggle-label"><i class="fa-solid fa-book-open"></i></label>
-  <!-- Menu-->
-  <nav id="menu">
-    <ul class="nav  bg-blue text-uppercase text-dark justify-content-end">
-      <li class="nav-item ">
-        <a class="nav-link  text-dark" aria-label="Go to our Home" href="index.html">Home</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-dark" aria-label="Go to our bout page" href="about.html">About</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link text-dark" aria-label="Go to our recipes page" href="recipes.html">Recipes</a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link active text-dark" href="contact.html" aria-label="Go to our contact page" >Contact</a>
-      </li>
-      <li class="nav-item">
+    <meta
+      name="Description"
+      content="Join the Pasties Parade journey! Our Cornish pasty recipes promise a delightful blend of ingredients encased in a crisp, homemade pastry."
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="assets/style.css" />
+    <title>Pasties Parade</title>
+  </head>
+  <body>
+    <!--Header-->
+    <header class="navigation bg-blue">
+      <!-- Logo-->
+      <a
+        class="logo text-dark text-uppercase text-decoration-none"
+        aria-label="Our Logo"
+        href="index.html"
+      >
+        <h1>Pasties Parade</h1>
+      </a>
+      <input type="checkbox" id="nav-toggle" name="nav-toggle" />
+      <label for="nav-toggle" class="nav-toggle-label"
+        ><i class="fa-solid fa-book-open"></i
+      ></label>
+      <!-- Menu-->
+      <nav id="menu">
+        <ul class="nav bg-blue text-uppercase text-dark justify-content-end">
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark"
+              aria-label="Go to our Home"
+              href="index.html"
+              >Home</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark"
+              aria-label="Go to our bout page"
+              href="about.html"
+              >About</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark"
+              aria-label="Go to our recipes page"
+              href="recipes.html"
+              >Recipes</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link active text-dark"
+              href="contact.html"
+              aria-label="Go to our contact page"
+              >Contact</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link text-dark"
+              href="submit.html"
+              aria-label="Go to our submission page"
+              >Submit</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <!--Main-->
+    <main class="main bg-white">
+      <div class="mask">
+        <div class="content-container">
+          <div class="form">
+            <h2 class="text-light text-center text-uppercase">Contact Us</h2>
+            <form
+              class="content-text text-light"
+              method="get"
+              action="https://stevewhitehouse66.github.io/Pasties-Parade/thankyou.html"
+            >
+              <label for="fname">First name:</label><br />
+              <input type="text" id="fname" name="fname" required /><br />
+              <label for="lname">Last name:</label><br />
+              <input type="text" id="lname" name="lname" required /><br />
+              <label for="email">Email:</label><br />
+              <input type="email" id="email" name="email" required /><br />
+              <label for="message">Message:</label><br />
+              <input type="text" id="message" name="message" required /><br />
+              <input type="submit" id="submit" name="submit" /><br />
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+    <!--Footer-->
+    <footer>
+      <div class="footer bg-blue">
+        <ul id="social-networks" class="bg-blue text-light">
+          <li>
+            <a
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Visit our Facebook page (opens in a new tab)"
+              ><i class="fa-brands fa-facebook"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.twitter.com/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Visit our Twitter page (opens in a new tab)"
+              ><i class="fa-brands t fa-twitter"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.pinterest.com/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Visit our pinterest page (opens in a new tab)"
+              ><i class="fa-brands fa-pinterest"></i
+            ></a>
+          </li>
+          <li>
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener"
+              aria-label="Visit our Instagram page (opens in a new tab)"
+              ><i class="fa-brands fa-instagram"></i
+            ></a>
+          </li>
+        </ul>
+        <p class="text-uppercase text-center bg-blue">
+          © Copyright 2024 Pasties Parade
+        </p>
+      </div>
+    </footer>
 
-
-        <a class="nav-link text-dark" href="submit.html" aria-label="Go to our submission page">Submit</a>
-
-      </li>
-    </ul>
-  </nav>
-</header>
- <!--Main-->
-<main class="main bg-white">
-  <div class="mask">
-    <div class="content-container">
-
-
-      <div class="form"><h2 class="text-light text-center text-uppercase">Contact Us</h2>
-      <form class="content-text text-light " method="get" action="https://stevewhitehouse66.github.io/Pasties-Parade/thankyou.html">
-        <label for="fname">First name:</label><br>
-        <input type="text"  id="fname" name="fname" required><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text"  id="lname" name="lname" required><br>
-        <label for="email">Email:</label><br>
-        <input type="email"  id="email" name="email" required><br>
-        <label for="message">Message:</label><br>
-        <input type="text"  id="message" name="message" required><br>
-        <input type="submit" id="submit" name="submit"><br>
-      </form>
-    </div>
-
-
-    </div>
-  </div>
-</main>
-<!--Footer-->
-<footer>
-<div class="footer bg-blue">
-  <ul id="social-networks" class="bg-blue text-light">
-    <li><a href="https://www.facebook.com/" target="_blank" rel="noopener"
-            aria-label="Visit our Facebook page (opens in a new tab)"><i class="fa-brands  fa-facebook"></i></a>
-    </li>
-    <li><a href="https://www.twitter.com/" target="_blank" rel="noopener"
-            aria-label="Visit our Twitter page (opens in a new tab)"><i class="fa-brands t fa-twitter"></i></a>
-    </li>
-    <li><a href="https://www.pinterest.com/" target="_blank" rel="noopener"
-            aria-label="Visit our pinterest page (opens in a new tab)"><i class="fa-brands  fa-pinterest"></i></a>
-    </li>
-    <li><a href="https://www.instagram.com/" target="_blank" rel="noopener"
-            aria-label="Visit our Instagram page (opens in a new tab)"><i
-                class="fa-brands  fa-instagram"></i></a>
-    </li>
-</ul>
-<p class=" text-uppercase text-center bg-blue">© Copyright 2024 Pasties Parade</p>
-</div>
-</footer>
-   
-<script src="https://kit.fontawesome.com/3795e96048.js" crossorigin="anonymous"></script>
-</body>
+    <script
+      src="https://kit.fontawesome.com/3795e96048.js"
+      crossorigin="anonymous"
+    ></script>
+  </body>
 </html>
