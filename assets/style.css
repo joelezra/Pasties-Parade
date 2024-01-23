@@ -151,7 +151,7 @@ nav {
 #menu>li {
   margin-bottom: .1em;
   margin: .1em;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 .nav-link {
@@ -340,6 +340,13 @@ textarea {
     font-size: 1.5rem;
     margin-right: .5em;
     padding-left: 0;
+  }
+  nav {
+    display: block;
+    position: relative;
+    box-shadow: none;
+    width: fit-content;
+    padding-right: .1rem;
   }
 
   .content-container {
